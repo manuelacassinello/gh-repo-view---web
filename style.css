@@ -1,12 +1,12 @@
-h1 {
-  color: #000;
-  background-color: #fff;
-  font-family:'IBM Plex Mono', monospace;
-  letter-spacing: 0px;
-  font-size: 20px;
-  line-height: 1.6;
-  font-weight: 100;
-  text-align: center;
+h1{
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: lighter;
+    text-align: center;
+
 }
 h2 {
   color: #000;
@@ -29,7 +29,7 @@ h3{
   text-align: center;
   font-weight: 100;
   text-align: justify;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 h4{
@@ -46,7 +46,6 @@ h4{
 
 h5{
   color: #000;
-
   font-family:'IBM Plex Mono', monospace;
   letter-spacing: 0px;
   font-size: 18px;
@@ -87,9 +86,12 @@ ul{
   justify-content: space-around;
   padding: 0 100px;
 }
+
 .container{
-  padding: 5px 5px 5px 5px;
+  padding:5px 5px 7px 7px;
   width: 100%;
+
+
 }
 .container5{
   padding: 0;
@@ -99,6 +101,40 @@ ul{
   width: 100%;
 }
 .container3{
-  display: flex;
+ padding: 0px 30px;
+ width: 200%;
+ margin: 0 auto;
+ max-width: 900px;
+ align-items: center;
+ justify-content: center;
+ text-align: left;
+ flex-direction: center;
+}
+
+.image-stack {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   position: relative;
+}
+.image-stack__item--top {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  padding-top: 3%;
+  z-index: 1;
+}
+
+.image-stack__item--bottom {
+  grid-column: 4 / -1;
+  grid-row: 1;
+  padding-bottom: 20%;
+
+}
+
+
+
+img {
+  width: 50%;
+  display: block;
+  align-items: center;
+  display: inline;
 }
