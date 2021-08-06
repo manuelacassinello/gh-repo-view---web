@@ -113,18 +113,22 @@ ul{
 
 .image-stack {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 4fr);
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
   position: relative;
+  padding-top: 20px;
 }
 .image-stack__item--top {
-  grid-column: 1 / span 8;
+  grid-column: 3 / span 7;
   grid-row: 1;
-  padding-top: 3%;
+  padding-top: 5%;
   z-index: 1;
 }
 
 .image-stack__item--bottom {
-  grid-column: 4 / -1;
+  grid-column: 5 / -1;
   grid-row: 1;
   padding-bottom: 20%;
 
